@@ -19,13 +19,23 @@ export const STOPWORDS = new Set([
   "because","don't","i'm","that's","it's","can't","didn't","won't",
   "you're","i've","we're","they're","need","were","into","only","even",
   "still","much","many","over","after","before","okay","actually",
-  "message", "sent", "attachment", "viswanath", "thelittle", "demon", "nivi",
-  "jeromejohnthomas", "mignatius", "matthew", "daniel", "aarav", "liked", "arvin", "tony",
-  "angelina", "reacted", "matthew", "poll", "jerome", "nivii", "edited", "longer", "available",
+  "message", "sent", "attachment", "liked", "edited", "poll", "reacted",
+  "available",
 ]);
 
+export function addStopwords(words) {
+  words.forEach(name => {
+    name
+      .toLowerCase()
+      .split(/\s+/)
+      .map(word => word.replace(/[^a-z0-9_']/g, ""))
+      .filter(Boolean)
+      .forEach(word => STOPWORDS.add(word));
+  });
+}
+
 export const EMOJI_RE = /\p{Extended_Pictographic}/u;
-export const WORD_RE = /[a-z']{4,}/g;
+export const WORD_RE = /[a-z0-9_']{4,}/g;
 
 // Short, ambiguous roots — matched as whole words only (see profanity.js)
 // so we don't count "class", "hello", "scrapped", etc.
