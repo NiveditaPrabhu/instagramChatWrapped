@@ -21,7 +21,7 @@ export const STOPWORDS = new Set([
   "still","much","many","over","after","before","okay","actually",
   "message", "sent", "attachment", "viswanath", "thelittle", "demon", "nivi",
   "jeromejohnthomas", "mignatius", "liked", "arvin", "tony",
-  "angelina", "reacted", "matthew", "poll",
+  "angelina", "reacted", "matthew", "poll", "jerome", "nivii", "edited", "longer", "available",
 ]);
 
 export const EMOJI_RE = /\p{Extended_Pictographic}/u;
