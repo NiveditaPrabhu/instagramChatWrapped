@@ -20,7 +20,7 @@ export const STOPWORDS = new Set([
   "you're","i've","we're","they're","need","were","into","only","even",
   "still","much","many","over","after","before","okay","actually",
   "message", "sent", "attachment", "viswanath", "thelittle", "demon", "nivi",
-  "jeromejohnthomas", "mignatius", "liked", "arvin", "tony",
+  "jeromejohnthomas", "mignatius", "matthew", "daniel", "aarav", "liked", "arvin", "tony",
   "angelina", "reacted", "matthew", "poll", "jerome", "nivii", "edited", "longer", "available",
 ]);
 
