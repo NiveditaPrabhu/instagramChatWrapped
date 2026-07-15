@@ -30,9 +30,8 @@ export default function UploadScreen({ onFiles, loading, error }) {
           Group Chat Wrapped
         </h1>
         <p className="muted" style={{ maxWidth: 380, margin: 0, fontSize: 15, lineHeight: 1.5 }}>
-          Turn one Instagram group chat export into a wrapped-style recap — top
-          texter, favorite emojis, busiest hours, and more. Everything runs
-          right here in your browser.
+          Turn one Instagram group chat export into a wrapped-style recap with the top
+          texter, favorite emojis, busiest hours, and more
         </p>
 
         <div
@@ -64,8 +63,11 @@ export default function UploadScreen({ onFiles, loading, error }) {
           <summary>Where do I get these files?</summary>
           <ol>
             <li>Instagram app → Settings → Accounts Center → Your information and permissions → Download your information</li>
+            <br></br>
             <li>Choose "Some of your information" → select Messages → format JSON</li>
+            <br></br>
             <li>Once Instagram emails you the export, unzip it and open <span className="mono">inbox/&lt;your group chat folder&gt;/</span></li>
+            <br></br>
             <li>Upload every <span className="mono">message_N.json</span> file from that folder here (large chats are split across several)</li>
           </ol>
         </details>
