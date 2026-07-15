@@ -20,7 +20,7 @@ export const STOPWORDS = new Set([
   "you're","i've","we're","they're","need","were","into","only","even",
   "still","much","many","over","after","before","okay","actually",
   "message", "sent", "attachment", "liked", "edited", "poll", "reacted",
-  "available",
+  "available", "longer", "maybe", "thing", "yall", "make", "smth", "guys", "gang",
 ]);
 
 export function addStopwords(words) {
